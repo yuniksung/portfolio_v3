@@ -1,6 +1,26 @@
 header{
+    height: 100vh;
     width: 100%;
-    height: 200vh;
-    background-color: #A5A58D;
-    color: $first-color;
+
+    .header-img{
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/header/header.jpg);
+        background-size: 130%;
+        background-position: 50% 15%;
+        background-attachment: fixed;
+
+        p{
+            font-family: $nanum;
+            font-size: 30px;
+            width: 160%;
+            height: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f1faee;
+            position: fixed;
+        }
+    }
 }
+

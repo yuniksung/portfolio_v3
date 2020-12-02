@@ -1,8 +1,35 @@
 // Color variables
-$first-color: rgb(203, 153, 126);
-$second-color: rgb(237, 220, 210);
-$third-color: rgb(255, 241, 230);
-$fourth-color: rgb(240, 239, 235);
-$fifth-color: rgb(221, 190, 169);
-$sixth-color: rgb(165, 165, 141);
-$seventh-color: rgb(183, 183, 164);
+$box-color:         rgb(40, 41, 45);
+$break-color:       rgb(192, 193, 194);
+$dark-color:        rgb(13, 14, 15);
+$orange-color:      rgb(244, 80, 39);
+$red-color:         rgb(255, 82, 97);
+$dark-red-color:    rgb(165, 67, 76);
+$white-color:       rgb(241, 250, 238);
+$light-blue-color:  rgb(168, 218, 220);
+$blue-color:        rgb(69, 123, 157);
+$indigo-color:      rgb(29, 53, 87);
+$yellow-color:      rgb(245, 215, 127);
+
+
+
+// default box shadow
+$default-shadow: 4px 6px 11px rgba(0, 0, 0, 0.8);
+$inbox-shadow: 1px 4px 9px rgba(0, 0, 0, 0.5);
+
+// font-style variables
+$gudea: 'Gudea', sans-serif;
+$nanum: 'Nanum Myeongjo', serif;
+
+
+
+// function
+
+// set text color based on bg
+@function set-text-color($color) {
+    @if(lightness($color) > 70){
+        @return $dark-color;
+    } @else {
+        @return $white-color;
+    }
+}

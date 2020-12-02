@@ -41,7 +41,7 @@ nav{
         a{
             position: relative;
             text-decoration: none;
-            color: rgb(253, 253, 253);
+            color: rgb(104, 104, 104);
             font-size: 18px;
             transition: 0.6s;
 
@@ -87,6 +87,49 @@ nav{
             &:hover{
                 color:  rgb(156, 156, 156);
             }
+        }
+    }
+}
+
+
+.side-sticky-menu{
+    width: 40px;
+    position: fixed;
+    bottom: 400px;
+    left: 10px;
+    right: auto;
+    z-index: 10;
+    
+    ;
+
+    .icon-list{
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0px;
+        padding: 5px;
+        list-style: none;
+        background-color: $light-blue-color;
+        border-radius: 15px;
+
+
+        li{
+            padding-bottom: 10px;
+            margin: 2px;
+            font-size: 22px;
+            transition: 0.35s;
+            
+
+            &:hover{
+                font-size: 30px;
+                
+            }
+        }
+
+        
+        i{
+            color: $orange-color;
         }
     }
 }

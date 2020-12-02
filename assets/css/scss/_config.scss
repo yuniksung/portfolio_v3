@@ -1,5 +1,57 @@
-*{
-    padding: 0;
+* {
     margin: 0;
-    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $gudea;
+    scroll-behavior: smooth;
+    color: $white-color;
+}
+
+// Page base
+@mixin defaultPage{
+    width: 70%;
+    min-height: 70%;
+    margin: auto;
+    padding: 20px auto;
+}
+
+@mixin box-container{
+    @include flexCenter(row);
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    padding: 20px auto;
+    border-radius: 15px;
+    background-color: $box-color;
+    box-shadow: $default-shadow;
+}
+
+
+// Page title default
+@mixin title-boxDefault{
+    position: absolute;
+    left: 28.5vh;
+    z-index: 5;
+}
+
+@mixin title-textDefault($color){
+    padding: 10px 20px;
+    font-size: 60px;
+    color: $color;
+    font-weight: 900;
+}
+
+// display flex + all center
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+  }
+
+// flex but no just-content + direction to column
+@mixin flexJusNo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

@@ -15,7 +15,7 @@ window.addEventListener("scroll", function() {
 
 const bg = document.getElementById('header');
     window.addEventListener('scroll', function() {
-    bg.style.backgroundSize = 130 - +window.pageYOffset/20+'%';
+    bg.style.backgroundSize = 130 - +window.pageYOffset/22+'%';
     bg.style.opacity = 1 - +window.pageYOffset/700+'';
 })
 
